@@ -1,0 +1,99 @@
+<!doctype html>
+<html lang="fr">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Cocotte &mdash; vos recettes, et un mode cuisson qui ne s&rsquo;&eacute;teint jamais</title>
+<meta name="description" content="Un carnet de recettes pour iPhone : import depuis une page web, mise &agrave; l&rsquo;&eacute;chelle des portions, minuteurs nomm&eacute;s d&eacute;tect&eacute;s dans les &eacute;tapes, liste de courses group&eacute;e par recette.">
+<style>
+:root{--creme:#fbf6ee;--carte:#fff;--encre:#231d16;--doux:#6f6355;--trait:#e6dcca;--brique:#a8421f;--herbe:#5c7a3f}
+@media(prefers-color-scheme:dark){:root{--creme:#14110d;--carte:#1c1813;--encre:#f0e9dd;--doux:#a79a86;--trait:#2d271f;--brique:#e0805c;--herbe:#9dbd78}}
+*{box-sizing:border-box;margin:0;padding:0}
+body{background:var(--creme);color:var(--encre);
+  font:17px/1.72 "Iowan Old Style",Palatino,"Palatino Linotype",Georgia,ui-serif,serif}
+.p{max-width:42rem;margin:0 auto;padding:0 24px 88px}
+header{padding:70px 0 8px;text-align:center}
+.marque{font-family:-apple-system,system-ui,sans-serif;font-size:11px;letter-spacing:.34em;text-transform:uppercase;color:var(--brique);font-weight:700}
+h1{font-size:clamp(30px,6.4vw,46px);line-height:1.14;font-weight:600;letter-spacing:-.012em;margin:20px auto 0;max-width:15ch}
+.chapo{color:var(--doux);font-size:18px;margin:16px auto 0;max-width:42ch}
+.filet{width:56px;height:1px;background:var(--trait);margin:34px auto}
+h2{font-family:-apple-system,system-ui,sans-serif;font-size:11.5px;letter-spacing:.22em;text-transform:uppercase;
+   color:var(--herbe);font-weight:700;margin-bottom:16px}
+section{padding:34px 0;border-top:1px solid var(--trait)}
+p{color:var(--doux);margin-bottom:13px}
+.fiche{background:var(--carte);border:1px solid var(--trait);border-radius:3px;padding:24px 26px;
+  box-shadow:0 1px 0 var(--trait)}
+.fiche .titre{font-size:22px;font-weight:600;color:var(--encre);margin-bottom:4px}
+.fiche .meta{font-family:-apple-system,system-ui,sans-serif;font-size:12px;letter-spacing:.09em;
+  text-transform:uppercase;color:var(--doux);margin-bottom:18px}
+ol.etapes{list-style:none;counter-reset:e}
+ol.etapes li{counter-increment:e;position:relative;padding:11px 0 11px 42px;border-bottom:1px dotted var(--trait);color:var(--doux);font-size:16px}
+ol.etapes li:last-child{border-bottom:0}
+ol.etapes li::before{content:counter(e);position:absolute;left:0;top:11px;width:26px;height:26px;border-radius:50%;
+  background:var(--creme);border:1px solid var(--trait);font-family:-apple-system,system-ui,sans-serif;
+  font-size:12px;font-weight:700;color:var(--encre);display:flex;align-items:center;justify-content:center}
+.minuteur{display:inline-block;margin-left:8px;background:var(--brique);color:#fff;border-radius:3px;
+  font-family:-apple-system,system-ui,sans-serif;font-size:11px;letter-spacing:.06em;padding:2px 8px;vertical-align:1px}
+dl dt{font-weight:600;color:var(--encre);margin-top:20px}
+dl dd{color:var(--doux);margin-top:2px}
+a{color:var(--brique)}
+footer{border-top:1px solid var(--trait);margin-top:12px;padding-top:26px;text-align:center;color:var(--doux);
+  font-family:-apple-system,system-ui,sans-serif;font-size:13px}
+</style>
+</head>
+<body>
+<div class="p">
+
+<header>
+  <div class="marque">Cocotte</div>
+  <h1>Le carnet de recettes qui tient debout pendant la cuisson</h1>
+  <p class="chapo">Le probl&egrave;me d&rsquo;une recette sur t&eacute;l&eacute;phone n&rsquo;est pas de l&rsquo;&eacute;crire. C&rsquo;est de la suivre avec les mains sales, pendant que trois choses cuisent en m&ecirc;me temps.</p>
+</header>
+
+<div class="filet"></div>
+
+<section style="border-top:0;padding-top:0">
+  <h2>Le mode cuisson</h2>
+  <div class="fiche">
+    <div class="titre">Blanquette de veau</div>
+    <div class="meta">6 parts &middot; ajust&eacute; depuis 4</div>
+    <ol class="etapes">
+      <li>Blanchir la viande 5&nbsp;min &agrave; l&rsquo;eau fr&eacute;missante, puis &eacute;goutter.<span class="minuteur">5:00</span></li>
+      <li>Suer la garniture aromatique, mouiller &agrave; hauteur.</li>
+      <li>Cuire &agrave; frémissement 1&nbsp;h&nbsp;15.<span class="minuteur">1:15:00</span></li>
+      <li>Monter le velout&eacute;, rectifier, servir.</li>
+    </ol>
+  </div>
+  <p style="margin-top:16px">Une &eacute;tape par &eacute;cran, en gros. L&rsquo;&eacute;cran ne se met jamais en veille tant que le mode cuisson est ouvert. Et quand une &eacute;tape contient une dur&eacute;e, Cocotte la rep&egrave;re et vous propose le minuteur d&eacute;j&agrave; r&eacute;gl&eacute; &mdash; nomm&eacute; d&rsquo;apr&egrave;s l&rsquo;&eacute;tape, parce que &laquo;&nbsp;Minuteur 2&nbsp;&raquo; ne vous dira rien dans vingt minutes.</p>
+</section>
+
+<section>
+  <h2>Les quatre choses qu&rsquo;il fait vraiment</h2>
+  <dl>
+    <dt>Importer au lieu de recopier</dt>
+    <dd>Collez une URL ou le texte d&rsquo;une recette&nbsp;: Cocotte lit les donn&eacute;es structur&eacute;es que la plupart des sites de cuisine publient d&eacute;j&agrave; (schema.org) et remplit ingr&eacute;dients et &eacute;tapes. Quand le site n&rsquo;en publie pas, l&rsquo;import &eacute;choue franchement plut&ocirc;t que d&rsquo;inventer.</dd>
+    <dt>Changer le nombre de parts</dt>
+    <dd>Les quantit&eacute;s suivent. Les temps de cuisson, non &mdash; doubler une blanquette ne double pas l&rsquo;heure et quart, et Cocotte ne pr&eacute;tend pas le contraire.</dd>
+    <dt>Plusieurs minuteurs &agrave; la fois</dt>
+    <dd>Nomm&eacute;s, simultan&eacute;s, avec notification. C&rsquo;est le sc&eacute;nario r&eacute;el d&rsquo;un dimanche midi.</dd>
+    <dt>Une liste de courses group&eacute;e par recette</dt>
+    <dd>Pas un tas d&rsquo;ingr&eacute;dients&nbsp;: on voit ce qui vient d&rsquo;o&ugrave;, donc on sait quoi retirer quand on renonce &agrave; l&rsquo;entr&eacute;e.</dd>
+  </dl>
+</section>
+
+<section>
+  <h2>O&ugrave; vivent vos recettes</h2>
+  <p>Sur votre iPhone. Il n&rsquo;y a pas de compte &agrave; cr&eacute;er, pas de biblioth&egrave;que partag&eacute;e, pas de serveur&nbsp;: Cocotte enregistre en local. L&rsquo;application existe en 34&nbsp;langues.</p>
+  <p>La version gratuite garde un nombre limit&eacute; de recettes&nbsp;; l&rsquo;achat Premium l&egrave;ve la limite. C&rsquo;est la seule chose qui se paie.</p>
+</section>
+
+<section>
+  <h2>Aide &amp; mentions</h2>
+  <p><a href="support.html">Assistance</a> &middot; <a href="privacy.html">Confidentialit&eacute;</a> &middot;
+  <a href="https://www.apple.com/legal/internet-services/itunes/dev/stdeula/">Licence</a></p>
+</section>
+
+<footer>© 2026 Oshi Lab · <a href="mailto:contact@oshi-messenger.com">contact@oshi-messenger.com</a></footer>
+</div>
+</body>
+</html>
